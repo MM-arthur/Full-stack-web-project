@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# 忽略 src/main/resources 目录下的 application.properties 文件
+src/main/resources/application.properties
