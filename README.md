@@ -47,9 +47,11 @@ First, let me clarify some easy topics.
 OpenJDK is open source, and Oracle JDK is not open source. But in most sitatuation, they are same. To avoid the risk of charge, I use OpenJDK in my project.
 
 - Spring boot
-Open source.
+Open source, easy to connect spring cloud, stability, etc. Honestly, Because most companies use it, I use it too.
 
+- Tips
+Be careful of version at each framework. If use the wrong version, it will cause some unbelievable problems, even can't find the solution and can't run the application. LOOK AT THE pom.xml.
 
 - **Summery**
-
+Java with Spring boot is used in my project as server side. Other high level midle ware like Redis, Kafka, etc will add in future.
 
