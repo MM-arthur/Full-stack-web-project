@@ -39,7 +39,7 @@ Sencondly, let me talk about the main database design ideas and maintan rules.
 - **Summery**
 **In my project, sqlscript.sql describe the table struct**
 
-## 2.Server Side (Backend Development)
+## 2.Server Side (Back-end Development)
 
 First, let me clarify some easy topics.   
 
@@ -54,4 +54,11 @@ Be careful of version at each framework. If use the wrong version, it will cause
 
 - **Summery**
 Java with Spring boot is used in my project as server side. Other high level midle ware like Redis, Kafka, etc will add in future.
+
+
+## 3.Browser Side (Front-end Development)
+
+First, let me clarify some easy topics.   
+
+- Vite plus Vue 
 
