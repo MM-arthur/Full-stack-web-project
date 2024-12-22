@@ -1,11 +1,10 @@
 <script setup>
-import { ref } from 'vue'
+import { defineProps } from 'vue'
 
-defineProps({
+const props = defineProps({
   msg: String,
+  users: Array
 })
-
-const count = ref(0)
 </script>
 
 <template>
@@ -34,6 +33,13 @@ const count = ref(0)
     >.
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+
+  <div v-if="users.length">
+    <h2>Users:</h2>
+    <ul>
+      <li v-for="user in users" :key="user.id">{{ user.userName }}</li>
+    </ul>
+  </div>
 </template>
 
 <style scoped>

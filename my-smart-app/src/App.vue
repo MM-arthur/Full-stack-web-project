@@ -1,5 +1,18 @@
 <script setup>
+import { ref } from 'vue'
+import axios from 'axios'
 import HelloWorld from './components/HelloWorld.vue'
+
+const users = ref([])
+
+const fetchUsers = async () => {
+  try {
+    const response = await axios.get('http://localhost:8080/api/users')
+    users.value = response.data
+  } catch (error) {
+    console.error('Error fetching users:', error)
+  }
+}
 </script>
 
 <template>
@@ -11,7 +24,8 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <button @click="fetchUsers">Fetch Users</button>
+  <HelloWorld :users="users" msg="Vite + Vue" />
 </template>
 
 <style scoped>
