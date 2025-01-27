@@ -60,5 +60,14 @@ Java with Spring boot is used in my project as server side. Other high level mid
 
 First, let me clarify some easy topics.   
 
-- Vite plus Vue 
+- Vite plus Vue3
+Open source, framework of front-end develop, one of three big framework(React, Angular, Vue).
 
+- element-plus
+Open source, UI style.
+
+- **Summery**
+HTML/CSS/JS with Vue is used in my project as browser side.
+
+## 4.Preview
+![Alt text](image.png)
