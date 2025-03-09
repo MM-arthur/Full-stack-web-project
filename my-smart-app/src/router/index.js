@@ -1,11 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Management.vue'
+import Management from '../views/Management.vue'
+import workspace from '../views/workspace.vue'
 
 const routes = [
   {
     path: '/Management',
     name: 'Management',
-    component: Home
+    component: Management
+  },
+
+  {
+    path: '/workspace',
+    name: 'workspace',
+    component: workspace
   },
 ]
 
